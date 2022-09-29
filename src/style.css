@@ -1,1 +1,41 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.container {
+  background-color: green;
+  margin: auto;
+  margin-top: 30px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+#card {
+  width: 400px;
+  margin-bottom: 50px;
+  height: 600px;
+  border-radius: 100px;
+}
+
+#palo-izq {
+  height: 30%;
+  font-size: 7em;
+  text-align: left;
+  border: white;
+}
+
+#palo-der {
+  height: 30%;
+  font-size: 7em;
+  text-align: right;
+  border: white;
+}
+
+#numero {
+  height: 40%;
+  font-size: 9em;
+  border: white;
+}
+
+strong {
+  font-size: 2em;
+}

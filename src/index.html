@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
-  </body>
+</head>
+
+<body>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-success fs-1" type="button" id="boton">Baraja</button>
+
+        <div class=" col container rounded">
+            <div class="container text-center text-bg-success p-3 rounded">
+                <div class="card" style="width: 30rem;" id="card">
+                    <div class="card" id="palo-izq"></div>
+                    <div class="card" id="numero"></div>
+                    <div class="card palo" id="palo-der"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justfy-content-center">
+            <div class="col-6">
+                <div>
+                    <div class="col-auto">
+                        <label for="ancho" class="col-form-label"><strong>Ancho</strong></label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="number" id="ancho" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div>
+                    <div class="col-auto">
+                        <label for="largo" class="col-form-label"><strong>Largo</strong></label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="number" id="largo" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success fs-1" type="button" id="cambia-size">Change size</button>
+
+        </div>
+</body>
+
 </html>
